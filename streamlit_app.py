@@ -24,3 +24,5 @@ if fruits_selected == []:
   fruits_selected = my_fruit_list.index
 
 st.dataframe(my_fruit_list.loc[fruits_selected])
+
+st.header('check this out ryan')
