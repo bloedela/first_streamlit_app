@@ -21,6 +21,6 @@ st.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 fruits_selected = st.multiselect('Pick some fruits:' , list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 
 if fruits_selected == []:
-  fruits_selected = my_fruit_list
+  fruits_selected = my_fruit_list.index
 
 st.dataframe(my_fruit_list.loc[fruits_selected])
