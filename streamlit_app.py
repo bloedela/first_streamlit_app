@@ -17,5 +17,3 @@ st.text('🥑🍞 Avocado Toast')
 
 st.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 st.dataframe(my_fruit_list)
-
-st.header('Isn''t this neat')
