@@ -28,4 +28,4 @@ if fruits_selected == []:
 
 st.dataframe(my_fruit_list.loc[fruits_selected])
 
-streamlit.text(fruityvice_response)
+st.text(fruityvice_response)
