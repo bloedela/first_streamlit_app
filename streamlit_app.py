@@ -28,5 +28,5 @@ if fruits_selected == []:
 
 st.dataframe(my_fruit_list.loc[fruits_selected])
 
-streamlit.header("Fruityvice Fruit Advice!")
+st.header("Fruityvice Fruit Advice!")
 st.text(fruityvice_response)
