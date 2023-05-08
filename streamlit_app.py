@@ -30,3 +30,8 @@ st.dataframe(my_fruit_list.loc[fruits_selected])
 
 st.header("Fruityvice Fruit Advice!")
 st.text(fruityvice_response)
+
+# write your own comment -what does the next line do? 
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+# write your own comment - what does this do?
+st.dataframe(fruityvice_normalized)
