@@ -1,9 +1,12 @@
 import streamlit as st
 import pandas as pd
+import requests
+
 
 #Load Files
 
 my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
 #Modify Dataframes
 my_fruit_list = my_fruit_list.set_index('Fruit')
@@ -24,3 +27,5 @@ if fruits_selected == []:
   fruits_selected = my_fruit_list.index
 
 st.dataframe(my_fruit_list.loc[fruits_selected])
+
+streamlit.text(fruityvice_response)
